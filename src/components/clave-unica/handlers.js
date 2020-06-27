@@ -32,9 +32,7 @@ async function callback(req, res) {
  * @param {Response} res - Express Response
  */
 async function me(req, res) {
-  const { accessToken, user: usar } = req.session;
-
-  console.log({ usar });
+  const { accessToken } = req.session;
 
   const claveUnica = new ClaveUnica({ accessToken });
 
