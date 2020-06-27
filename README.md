@@ -16,7 +16,8 @@ cp .env.dist .env
 ### Generate HTTPS certificates
 
 ```bash
-mkcert claveunica-dev.jesusurrutia.com
+# Domain setting in activation form
+mkcert domain.com
 ```
 
 # Modify your `/etc/hosts`
@@ -24,14 +25,20 @@ mkcert claveunica-dev.jesusurrutia.com
 Add an entry
 
 ```
-127.0.0.1 claveunica-dev.jesusurrutia.com
+# Domain setting in activation form
+127.0.0.1 domain.com
 ```
 
 ## Running
 
 ```bash
+yarn run dev
+
+# For production
 yarn run start
 ```
+
+Open your browser in configured domain: https://domain.com
 
 ## References
 
