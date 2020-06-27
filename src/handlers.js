@@ -11,7 +11,4 @@ function errorHandler(err, _req, res, _next) {
   res.send(err.message);
 }
 
-export {
-  home,
-  errorHandler,
-};
+export { home, errorHandler };

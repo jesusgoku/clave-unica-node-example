@@ -1,6 +1,10 @@
 import ClaveUnicaAuth from '../libraries/claveUnicaAuth';
 
-import { CLAVE_UNICA_CLIENT_ID, CLAVE_UNICA_CLIENT_SECRET, CLAVE_UNICA_REDIRECT_URI } from '../../../config';
+import {
+  CLAVE_UNICA_CLIENT_ID,
+  CLAVE_UNICA_CLIENT_SECRET,
+  CLAVE_UNICA_REDIRECT_URI,
+} from '../../../config';
 
 const claveUnicaAuth = new ClaveUnicaAuth({
   clientId: CLAVE_UNICA_CLIENT_ID,

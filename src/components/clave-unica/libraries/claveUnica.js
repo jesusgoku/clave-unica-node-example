@@ -14,7 +14,7 @@ class ClaveUnica {
       url: 'https://www.claveunica.gob.cl/openid/userinfo/',
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${accessToken}`,
+        Authorization: `Bearer ${accessToken}`,
       },
     });
 

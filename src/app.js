@@ -10,12 +10,14 @@ import routes from './routes';
 const app = express();
 
 app.set('trust proxy', 1);
-app.use(session({
-  secret: SECRET,
-  resave: false,
-  saveUninitialized: true,
-  cookie: { secure: true },
-}));
+app.use(
+  session({
+    secret: SECRET,
+    resave: false,
+    saveUninitialized: true,
+    cookie: { secure: true },
+  }),
+);
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 

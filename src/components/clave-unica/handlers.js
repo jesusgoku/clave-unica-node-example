@@ -40,7 +40,6 @@ async function me(req, res) {
 
   const user = await claveUnica.getUserInfo();
 
-
   res.json(user);
 }
 
@@ -50,9 +49,4 @@ function logout(req, res) {
   res.redirect('/');
 }
 
-export {
-  login,
-  callback,
-  me,
-  logout,
-};
+export { login, callback, me, logout };

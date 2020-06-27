@@ -27,19 +27,15 @@ import crypto from 'crypto';
  * @property {String} tokenType - type of token (bearer)
  */
 
- /**
-  * SDK for ClaveUnica auth
-  */
+/**
+ * SDK for ClaveUnica auth
+ */
 class ClaveUnicaAuth {
   /**
    *
    * @param {ClaveUnicaOptions} param0
    */
-  constructor({
-    clientId,
-    clientSecret,
-    redirectUri,
-  }) {
+  constructor({ clientId, clientSecret, redirectUri }) {
     this.config = {
       client_id: clientId,
       client_secret: clientSecret,
@@ -79,11 +75,7 @@ class ClaveUnicaAuth {
    * @returns {AuthTokens}
    */
   async getToken({ code, state }) {
-    const {
-      client_id,
-      client_secret,
-      redirect_uri,
-    } = this.config;
+    const { client_id, client_secret, redirect_uri } = this.config;
 
     const response = await axios({
       url: 'https://accounts.claveunica.gob.cl/openid/token/',
@@ -112,11 +104,7 @@ class ClaveUnicaAuth {
    * @return {AuthTokens}
    */
   async refreshToken(refresh_token) {
-    const {
-      client_id,
-      client_secret,
-      redirect_uri,
-    } = this.config;
+    const { client_id, client_secret, redirect_uri } = this.config;
 
     const response = await axios({
       url: 'https://accounts.claveunica.gob.cl/openid/token/',
