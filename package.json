@@ -1,12 +1,14 @@
 {
-  "name": "claveunica",
+  "name": "clave-unica",
   "version": "1.0.0",
+  "private": true,
   "main": "index.js",
   "author": "Jesús Urrutia <jesus.urrutia@gmail.com> (https://jesusurrutia.com)",
   "license": "MIT",
   "scripts": {
     "start": "node -r dotenv/config -r esm src",
     "dev": "nodemon -r dotenv/config -r esm src",
+    "release": "standard-version",
     "code:check": "yarn code:lint; yarn code:format --check",
     "code:clean": "yarn code:lint --fix; yarn code:format --write",
     "code:lint": "eslint --ext .js,.jsx,.ts,.tsx \"src/\"",
@@ -19,7 +21,8 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "nodemon": "^2.0.4",
-    "poetic": "^1.5.0"
+    "poetic": "^1.5.0",
+    "standard-version": "^8.0.0"
   },
   "dependencies": {
     "axios": "^0.19.2",
