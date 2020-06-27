@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/jesusgoku/clave-unica-node-example/compare/v1.0.0...v1.0.1) (2020-06-27)
+
+
+### Bug Fixes
+
+* remove console.log ([fb46084](https://github.com/jesusgoku/clave-unica-node-example/commit/fb46084da518fedc0ed9943af4d5de487b5ddda9))
+
 ## 1.0.0 (2020-06-27)
 
 
